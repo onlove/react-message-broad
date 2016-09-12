@@ -32,7 +32,8 @@ module.exports ={
         progress: true,
         contentBase: 'build',
         inline: true,
-        stats: { colors: true}
+        stats: { colors: true},
+	port:8090
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -40,7 +41,7 @@ module.exports ={
             template: path.resolve(__dirname, 'src/index.html')
         }),
         new OpenBrowserWebpackPlugin({
-            url: "http://localhost:8080"
+            url: "http://localhost:8090"
         })
     ]
 }
