@@ -11,3 +11,4 @@ var data = [
 let root = document.getElementById("app");
 
 ReactDOM.render(<CommentBox data={data}/>, root)
+

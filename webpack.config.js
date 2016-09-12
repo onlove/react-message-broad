@@ -1,7 +1,6 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var OpenBrowserWebpackPlugin = require('open-browser-webpack-plugin');
-
 module.exports ={
     entry: path.resolve(__dirname, 'src/index.js'),
     output: {
@@ -11,7 +10,6 @@ module.exports ={
     resolve: {
         extransion: ['', '.js', '.jsx', '.json']
     },
-
     module:{
         loaders:[
             {

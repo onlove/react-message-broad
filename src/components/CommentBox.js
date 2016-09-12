@@ -47,3 +47,5 @@ export default class CommentBox extends Component {
         )
     }
 }
+<CommentList data={this.props.data}/>
+
